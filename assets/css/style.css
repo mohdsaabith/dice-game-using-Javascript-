@@ -13,6 +13,8 @@ body{
     background-size: 100% 50%;
 }
 
+
+/* here in this container the all things came the image , score and the button*/
 .container{
     width: 400px;
     padding: 50px;
@@ -27,13 +29,18 @@ body{
     flex-direction: column;
     align-items: center;
 }
+/*Container end's here*/
 
+/*the imgae start's here*/
 .dice-wrapper{
     width: 90%;
     display: flex;
     justify-content: space-around;
 }
+/*the imgae end's here*/
 
+
+/*Score display start's here*/
 .para p{
     display: inline-block;
 }
@@ -49,9 +56,9 @@ p{
     margin-bottom: 15px;
 
 }
+/*Score display end's here*/
 
-
-
+/*Roll button css file start's here*/
 button{
     background-color: #e92e3d;
     border: none;
@@ -61,8 +68,11 @@ button{
     width: 150px;
     letter-spacing: 1px;
     border-radius: 5px;
+    margin-top: 15px;
 }
+/*Roll button css file end's here*/
 
+/*Dice shake csss file start's here*/
 .shake{
     animation: shake 0.5s infinite;
 }
@@ -77,3 +87,4 @@ button{
         transform: rotate(8deg);
     }
 }
+/*Dice shake csss file end's here*/

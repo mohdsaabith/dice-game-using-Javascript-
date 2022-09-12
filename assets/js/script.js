@@ -1,3 +1,5 @@
+
+//image of dice here
 let images = ["/assets/images/dice-01.svg",
 "/assets/images/dice-02.svg",
 "/assets/images/dice-03.svg",
@@ -5,8 +7,11 @@ let images = ["/assets/images/dice-01.svg",
 "/assets/images/dice-05.svg",
 "/assets/images/dice-06.svg"];
 
+//here we call the image from the hmtl 'dice' 
 let dice = document.querySelectorAll("img");
 
+
+// here the funtion to roll the dice
 function roll(){
     dice.forEach(function(die){
         die.classList.add("shake");
@@ -16,6 +21,7 @@ function roll(){
             die.classList.remove("shake")
         });
 
+        //here is the math random funtion it call's random number upto 6
         let dieOneValue = Math.floor(Math.random()*6);
         let dieTwoValue = Math.floor(Math.random()*6);
 
