@@ -31,7 +31,7 @@ function roll(){
         diceScore1 = dieOneValue + 1;
         currentScore1 += diceScore1;
         if(currentScore1 >=25){
-            alert("Player-1 won");
+            document.querySelector("#result").innerHTML = "Player-1 won";
         }
 
 
@@ -39,7 +39,7 @@ function roll(){
         diceScore2 = dieTwoValue + 1;
         currentScore2 += diceScore2;
         if(currentScore2 >= 25){
-            alert("Player-2 won");
+            document.querySelector("#result").innerHTML = "Player-2 won";
         }
 
 
@@ -64,6 +64,6 @@ function reset(){
     currentScore1 = 0;
     currentScore2 = 0;
 
-    document.getElementById("#total-1").innerHTML= 0;
-    document.getElementById("#total-2").innerHTML= 0;
+    document.querySelector("#total-1").innerHTML = "Player-1 have " + 0 ;
+    document.querySelector("#total-2").innerHTML = "Player-2 have " + 0  ;
 }
