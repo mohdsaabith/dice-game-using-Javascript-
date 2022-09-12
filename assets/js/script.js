@@ -33,11 +33,17 @@ function roll(){
         let dieOneValue = Math.floor(Math.random()*6);
         diceScore1 = dieOneValue + 1;
         currentScore1 += diceScore1;
+        if(currentScore1 >=25){
+            alert("Player-1 won");
+        }
 
 
         let dieTwoValue = Math.floor(Math.random()*6);
         diceScore2 = dieTwoValue + 1;
         currentScore2 += diceScore2;
+        if(currentScore2 >= 25){
+            alert("Player-2 won");
+        }
 
 
 
