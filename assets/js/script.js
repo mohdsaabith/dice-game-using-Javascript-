@@ -1,11 +1,11 @@
 
 //image of dice here
-let images = ["/assets/images/dice-01.svg",
-"/assets/images/dice-02.svg",
-"/assets/images/dice-03.svg",
-"/assets/images/dice-04.svg",
-"/assets/images/dice-05.svg",
-"/assets/images/dice-06.svg"];
+let images = ["./assets/images/dice-01.svg",
+"./assets/images/dice-02.svg",
+"./assets/images/dice-03.svg",
+"./assets/images/dice-04.svg",
+"./assets/images/dice-05.svg",
+"./assets/images/dice-06.svg"];
 
 //here we call the image from the hmtl 'dice' 
 let dice = document.querySelectorAll("img");
