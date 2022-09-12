@@ -1,10 +1,7 @@
-var total1 =0;
-var total2 = 0;
+
 
 currentScore1 = 0;
 currentScore2 = 0;
-
-var i=0;
 
 
 //image of dice here
@@ -52,9 +49,21 @@ function roll(){
         document.querySelector("#die-1").setAttribute("src", images[dieOneValue]);
         document.querySelector("#die-2").setAttribute("src",images[dieTwoValue]);
    
+        //here the score display of both player
         document.querySelector("#total-1").innerHTML = "Player-1 have " + (currentScore1);
         document.querySelector("#total-2").innerHTML = "Player-2 have " + (currentScore2 );
     },
     1000
     );
+}
+
+function reset(){
+    var total1 =0;
+    var total2 = 0;
+
+    currentScore1 = 0;
+    currentScore2 = 0;
+
+    document.getElementById("#total-1").innerHTML= 0;
+    document.getElementById("#total-2").innerHTML= 0;
 }
