@@ -66,4 +66,6 @@ function reset(){
 
     document.querySelector("#total-1").innerHTML = "Player-1 have " + 0 ;
     document.querySelector("#total-2").innerHTML = "Player-2 have " + 0  ;
+
+    document.querySelector("#result").innerHTML = 0;
 }
